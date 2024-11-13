@@ -33,7 +33,6 @@
 <?php $this->pageNav('&nbsp;←&nbsp;', '&nbsp;→&nbsp;', '5', '…'); ?>
 </div>
 <?php }; ?>
-<?php else : ?><article><em>空空如也 ...</em></article><?php endif; ?>
 
 
 </main>

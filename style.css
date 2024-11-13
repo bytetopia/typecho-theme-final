@@ -216,29 +216,8 @@ footer,footer a {
 }
 
 
-.page-indicator ol {
-	list-style:none;
-	display:inline-flex;
-	padding:0;
-}
-.page-indicator .page-numbers,.page-indicator ol a {
-	width:35px;
-	height:35px;
-	line-height:35px;
-	margin-right:8px;
-	display:inline-block;
-	text-align:center;
-	border-radius:4px;
-}
-.page-indicator .pagination a:hover,.page-indicator .pagination .current,.page-indicator ol a:hover,.page-indicator ol .current a {
-	background:#333;
-	color:#fff;
-	text-decoration:none;
-}
-.page-indicator .page-numbers,.page-indicator ol a {
-	background:#f8f8f8;
-	color:#555
-}
-.page-indicator {
-	margin:80px 0 50px
-}
+.post-pagination ol{list-style: none;display:inline-flex;padding: 0;}
+.linked-pagination span,.linked-pagination a:hover span,.post-pagination .page-numbers,.post-pagination ol a{width:35px;height:35px;line-height:35px;margin-right:8px;display:inline-block;text-align:center;border-radius:4px;}
+.linked-pagination span,.linked-pagination a:hover span,.post-pagination .pagination a:hover,.post-pagination .pagination .current,.post-pagination ol a:hover,.post-pagination ol .current a{background:#333;color:#fff}
+.linked-pagination a span,.post-pagination .page-numbers,.post-pagination ol a{background:#f8f8f8;color:#555}
+.linked-pagination,.post-pagination{margin:80px 0 50px}

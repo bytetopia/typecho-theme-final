@@ -163,6 +163,7 @@ ul.posts li a:visited {
 	color:var(--gray-color);
 }
 .tags a {
+	color: #888;
 	margin:0 5px 0 2px;
 }
 .post-item {

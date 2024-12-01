@@ -1,5 +1,9 @@
 # typecho-theme-final
 
+Demo|测试站点: https://final.linkpark.site/
+
+(Do not attack my vps please. 请不要攻击我的小鸡，谢谢大佬…)
+
 ```
 /**
  * 你的最后一个主题。接下来请专心写作吧。

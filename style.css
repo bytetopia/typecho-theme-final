@@ -1,224 +1,266 @@
+@font-face {
+	font-family: 'Opposans';
+	src: url('opposans.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
 :root {
-	--width:720px;
-	--font-scale:16px;
-	--background-color:#fff;
-	--heading-color:#222;
-	--text-color:#222;
-	--link-color:#222;
-	--visited-color:#222;
-	--code-background-color:#F0F0F0;
-	--code-color:#222;
-	--blockquote-color:#222;
-	--gray-color:#666;
+--width:720px;
+--font-scale:1.1rem;
+--background-color:#fff;
+--heading-color:#222;
+--text-color:#222;
+--link-color:#222;
+--visited-color:#222;
+--code-background-color:#F0F0F0;
+--code-color:#222;
+--blockquote-color:#222;
+--gray-color:#666;
 }
 @media (prefers-color-scheme:dark) {
-	:root {
-	--background-color:#111;
-	--heading-color:#eee;
-	--text-color:#ddd;
-	--link-color:#6ab0e5;
-	--visited-color:#8b6fcb;
-	--code-background-color:#000;
-	--code-color:#ddd;
-	--blockquote-color:#ccc;
-	--gray-color:#999;
+:root {
+--background-color:#111;
+--heading-color:#eee;
+--font-scale:1.1rem;
+--text-color:#ddd;
+--link-color:#6ab0e5;
+--visited-color:#8b6fcb;
+--code-background-color:#000;
+--code-color:#ddd;
+--blockquote-color:#ccc;
+--gray-color:#999;
 }
 }body {
-	font-size:var(--font-scale);
-	margin:auto;
-	max-width:var(--width);
-	text-align:left;
-	background-color:var(--background-color);
-	word-wrap:break-word;
-	overflow-wrap:break-word;
-	line-height:1.7;
-	color:var(--text-color);
-	font-family:system-ui,serif;
-	height:100%;
+font-size:var(--font-scale);
+margin:auto;
+max-width:var(--width);
+text-align:left;
+background-color:var(--background-color);
+word-wrap:break-word;
+overflow-wrap:break-word;
+line-height:1.7;
+font-weight: 500;
+color:var(--text-color);
+font-family:'Opposans',system-ui,serif;
+height:100%;
+	word-break: break-all;
 }
 html {
-	scroll-behavior:smooth;
-	height:100%;
+scroll-behavior:smooth;
+height:100%;
 }
 time {
-	font-family:consolas,monospace;
-	font-style:normal;
+font-family:'Opposans',consolas,monospace;
+font-style:normal;
 }
 h1,h2,h3,h4,h5,h6 {
-	color:var(--heading-color);
-	display:inherit;
+color:var(--heading-color);
+display:inherit;
 }
 a {
-	color:var(--link-color);
-	cursor:pointer;
-	text-decoration:none;
-	border-bottom:1px solid transparent;
+color:var(--link-color);
+cursor:pointer;
+text-decoration:none;
+border-bottom:1px solid transparent;
 }
 a:hover,nav .current {
-	color:var(--gray-color);
-	text-decoration:underline;
+color:var(--gray-color);
+text-decoration:underline;
 }
 nav a {
-	margin-right:8px;
+margin-right:8px;
+}
+p a {
+text-decoration: underline;
 }
 strong,b {
-	color:var(--heading-color);
+color:var(--heading-color);
 }
 button {
-	margin:0;
-	cursor:pointer;
+margin:0;
+cursor:pointer;
 }
 table {
-	width:100%;
+width:100%;
 }
 pre {
-	padding:5px 12px;
-	overflow:auto;
+padding:5px 12px;
+overflow:auto;
+	max-height: 400px;
 }
 hr {
-	border:0;
-	border-top:1px dashed;
+border:0;
+border-top:1px dashed;
 }
 img {
-	max-width:100%;
-	height:auto;
+max-width:100%;
+height:auto;
 }
 time,.intro {
-	color:var(--gray-color);
+color:var(--gray-color);
 }
 pre,code {
-	font-size:0.9em;
-	font-family:"Roboto Mono",monospace,serif;
-	background-color:var(--code-background-color);
-	color:var(--code-color);
-	border-radius:4px;
+font-size:0.9em;
+font-family:'Opposans',"Roboto Mono",monospace,serif;
+background-color:var(--code-background-color);
+color:var(--code-color);
+border-radius:4px;
 }
 code {
-	padding:0px 3px;
+padding:2px 3px;
+}
+pre code{
+padding:3px 0px;
 }
 blockquote {
-	border-left:1px solid #999;
-	color:var(--code-color);
-	padding-left:20px;
-	font-style:italic;
+border-left: 5px solid var(--heading-color);
+padding: 10px 15px;  
+margin: 10px 0;
+font-weight: bold; 
+color: var(--blockquote-color); 
+background: #fff;
+border-radius: 5px;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+blockquote footer {
+text-align:right;
+font-size:0.9em;
+color:#777;
 }
 input {
-	border-radius:4px;
-	border:1px solid var(--gray-color);
-	margin:0 0 15px 0;
-	padding:10px;
-	width:50%;
+border-radius:4px;
+border:1px solid var(--gray-color);
+margin:0 0 15px 0;
+padding:10px;
+width:50%;
 }
 input:focus {
-	outline:0;
+outline:0;
 }
 input[type="submit"] {
-	padding:9px 10px;
-	text-align:center;
-	width:80px;
-	display:inline-flex;
-	background-color:var(--heading-color);
-	color:var(--code-background-color);
-	border:none;
+padding:9px 10px;
+text-align:center;
+width:80px;
+display:inline-flex;
+background-color:var(--heading-color);
+color:var(--code-background-color);
+border:none;
 }
 input[type="submit"]:hover {
-	cursor:pointer;
-	opacity:.7;
+cursor:pointer;
+opacity:.7;
 }
 header,footer {
-	padding:10px 0;
+padding:10px 0;
 }
 .title h1,.title h2 {
-	font-size:3.5em;
+font-size:3.5em;
 }
 .title:hover {
-	text-decoration:none;
+text-decoration:none;
 }
 main {
-	margin-top:50px;
-	flex:1;
-	/* 让 main 填充剩余空间 */
-            box-sizing:border-box;
-	/* 确保 padding 不影响宽度 */
+margin-top:50px;
+flex:1;
+/* 让 main 填充剩余空间 */
+		box-sizing:border-box;
+/* 确保 padding 不影响宽度 */
 }
 nav a {
-	font-size:1.2em;
+font-size:1.2em;
 }
 ul.posts {
-	list-style-type:none;
-	padding:unset;
+list-style-type:none;
+padding:unset;
 }
 ul.posts li {
-	display:flex;
-	margin:3px 0;
+display:flex;
+margin:3px 0;
 }
 ul.posts li span {
-	flex:0 0 115px;
+flex:0 0 115px;
 }
 ul.posts li a:visited {
-	color:var(--visited-color);
+color:var(--visited-color);
 }
 .tags {
-	margin-top:30px;
-	color:var(--gray-color);
+margin-top:30px;
+color:var(--gray-color);
 }
 .tags a {
-	color: #888;
-	margin:0 5px 0 2px;
+color:#888;
+margin:0 5px 0 2px;
 }
 .post-item {
-	display:flex;
-	/* 使用 Flexbox 布局 */
-            justify-content:space-between;
-	/* 使链接和时间在两端对齐 */
-            align-items:center;
-	/* 垂直居中对齐 */
-            margin-bottom:10px;
-	/* 每个项目之间的间距 */
+display:flex;
+/* 使用 Flexbox 布局 */
+		justify-content:space-between;
+/* 使链接和时间在两端对齐 */
+		align-items:center;
+/* 垂直居中对齐 */
+		margin-bottom:10px;
+/* 每个项目之间的间距 */
 }
 .post-item a {
-	flex:1;
-	/* 使链接填满可用空间 */
+flex:1;
+/* 使链接填满可用空间 */
 }
 .post-item time {
-	margin-left:10px;
-	/* 给时间标签添加一点左边距 */
-            white-space:nowrap;
-	/* 防止时间换行 */
+margin-left:10px;
+/* 给时间标签添加一点左边距 */
+		white-space:nowrap;
+/* 防止时间换行 */
 }
 footer,footer a {
-	color:#999;
-	/* 设置链接颜色 */
-            text-decoration:none;
-	/* 去掉下划线 */
-            transition:color 0.3s;
-	/* 增加过渡效果 */
-            font-size:12px;
+color:#999;
+/* 设置链接颜色 */
+		text-decoration:none;
+/* 去掉下划线 */
+		transition:color 0.3s;
+/* 增加过渡效果 */
+		font-size:12px;
 }
 .home {
-	display:flex;
-	flex-direction:column;
-	min-height:100vh;
-	/* 使其至少占满整个视口高度 */
+display:flex;
+flex-direction:column;
+min-height:100vh;
+/* 使其至少占满整个视口高度 */
 }
 /* 针对手机设备设置 padding */
-        @media (max-width:768px) {
-	/* 768px 是常见的平板和手机的屏幕宽度 */
-            body {
-	padding:0px 20px;
-	/* 手机上设置 padding */
+	@media (max-width:768px) {
+/* 768px 是常见的平板和手机的屏幕宽度 */
+		body {
+padding:0px 20px;
+/* 手机上设置 padding */
 }
 }/* 针对电脑设备去掉 padding（默认情况下没有设置） */
-        @media (min-width:769px) {
-	body {
-	padding:0;
-	/* 在电脑上去掉 padding */
+	@media (min-width:769px) {
+body {
+padding:0;
+/* 在电脑上去掉 padding */
 }
+}.post-pagination ol {
+list-style:none;
+display:inline-flex;
+padding:0;
 }
-
-
-.post-pagination ol{list-style: none;display:inline-flex;padding: 0;}
-.linked-pagination span,.linked-pagination a:hover span,.post-pagination .page-numbers,.post-pagination ol a{width:35px;height:35px;line-height:35px;margin-right:8px;display:inline-block;text-align:center;border-radius:4px;}
-.linked-pagination span,.linked-pagination a:hover span,.post-pagination .pagination a:hover,.post-pagination .pagination .current,.post-pagination ol a:hover,.post-pagination ol .current a{background:#333;color:#fff}
-.linked-pagination a span,.post-pagination .page-numbers,.post-pagination ol a{background:#f8f8f8;color:#555}
-.linked-pagination,.post-pagination{margin:80px 0 50px}
+.linked-pagination span,.linked-pagination a:hover span,.post-pagination .page-numbers,.post-pagination ol a {
+width:35px;
+height:35px;
+line-height:35px;
+margin-right:8px;
+display:inline-block;
+text-align:center;
+border-radius:4px;
+}
+.linked-pagination span,.linked-pagination a:hover span,.post-pagination .pagination a:hover,.post-pagination .pagination .current,.post-pagination ol a:hover,.post-pagination ol .current a {
+background:#333;
+color:#fff
+}
+.linked-pagination a span,.post-pagination .page-numbers,.post-pagination ol a {
+background:#f8f8f8;
+color:#555
+}
+.linked-pagination,.post-pagination {
+margin:80px 0 50px
+}

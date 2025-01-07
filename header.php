@@ -12,7 +12,7 @@
     ], '', ' - '); ?><?php $this->options->title(); ?></title>
     <link rel="canonical" href="<?php $this->options->siteUrl(); ?>">
     <meta name="title" content="<?php $this->options->title(); ?>">
-    <meta name="description" content="<?php $this->options->description() ?: _e('默认描述内容'); ?>">
+    <meta name="description" content="<?php echo $this->options->description(); ?>">
     <link rel="alternate" type="application/atom+xml" href="<?php $this->options->siteUrl(); ?>feed/">
     <link rel="shortcut icon" type="image/svg+xml" href="<?php $this->options->logoUrl() ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">

@@ -70,7 +70,7 @@ text-decoration:underline;
 nav a {
 margin-right:8px;
 }
-p a {
+article a {
 text-decoration: underline;
 }
 strong,b {
@@ -192,14 +192,9 @@ color:#888;
 margin:0 5px 0 2px;
 }
 .post-item {
-display:flex;
-/* 使用 Flexbox 布局 */
+	display:flex;
 		justify-content:space-between;
-/* 使链接和时间在两端对齐 */
-		align-items:center;
-/* 垂直居中对齐 */
 		margin-bottom:10px;
-/* 每个项目之间的间距 */
 }
 .post-item a {
 flex:1;

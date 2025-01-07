@@ -9,10 +9,12 @@
             </time>
         </i>
     </p>
+    <article>
     <?php if ($this->content): ?>
         <?php $this->content(); ?>
     <?php else: ?>
         <p>此页面内容尚未发布。</p>
     <?php endif; ?>
+    </article>
 </main>
 <?php $this->need('footer.php'); ?>

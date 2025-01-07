@@ -11,11 +11,13 @@
         </i>
         <?php $this->category(' · '); ?>
     </p>
+    <article>
     <?php if ($this->content): ?>
         <?php $this->content(); ?>
     <?php else: ?>
         <p>此文章内容尚未发布。</p>
     <?php endif; ?>
+    </article>
     <p class="tags">
         <?php $this->tags(' · ', true, ' '); ?>
     </p>

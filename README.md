@@ -6,8 +6,8 @@ Demo|测试站点: https://final.linkpark.site/
 
 ```
 /**
- * 你的最后一个主题。接下来请专心写作吧。
- * Your final theme. Please focus on writing next.
+ * 或许是你的最终选择，接下来请专心写作吧。Your final choice. Please focus on writing next.
+ * 
  *
  * @package final
  * @author HoytZhang
@@ -18,37 +18,22 @@ Demo|测试站点: https://final.linkpark.site/
 
 ![screenshot](./screenshot.png)
 
- 如果你想添加导航，下面是代码（样式文件已经包含在style.css中）：
+---
 
- ```
-<nav>
-    <p>                    
-        <a<?php if ($this->is('index')): ?>  <?php endif; ?>
-            href="<?php $this->options->siteUrl(); ?>"><?php _e('首页'); ?></a>
-        <?php \Widget\Contents\Page\Rows::alloc()->to($pages); ?>
-        <?php while ($pages->next()): ?>
-            <a<?php if ($this->is('page', $pages->slug)): ?> <?php endif; ?>
-                href="<?php $pages->permalink(); ?>"
-                title="<?php $pages->title(); ?>"><?php $pages->title(); ?></a>
-        <?php endwhile; ?>
-    </p>
-</nav>
- ```
+# 停止把时间浪费在寻找工具上
 
-```
+> 今天想想，当时的我就是个赛博仓鼠，更准确地说是赛博恶龙，每天就是在囤积各种软件和工具，还会抽出时间，比较和欣赏自己的各种“战利品”。😭
 
-            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
-                    Version 2, December 2004
+以前喜欢囤积和比较各种“生产力工具”的程度，甚至已经成为了一种病征。
 
- Copyright (C) 2004 Sam Hocevar <sam@hocevar.net>
+* 每天周旋在各种笔记软件中间，最后没记下什么东西，满脑子都是收费免费同步之类的关键字
+* 喜欢比较各种浏览器，甚至开始寻找体验一些没人用的小众浏览器，实际上这些浏览器的独特功能其实一个插件就能覆盖
+* 各种比较博客平台，最后什么痕迹都没留下，甚至衍生了对各种VPS的选择
+* 公司有名的输入法大户，对各种输入工具的特性了然于胸
+* 手机ROM，刷机也上瘾，甚至在主力机上各种体验
+* …
+当时还有自己的一套说辞：作为程序员我深知没有完美的工具，但是我尽量把自己的工具完善的最好用。
 
- Everyone is permitted to copy and distribute verbatim or modified
- copies of this license document, and changing it is allowed as long
- as the name is changed.
+实际上收费的软件基本都闭源，用来用去总是觉得部分功能缺失不够好用；开源的软件像是半成品，仿佛自己对着食谱操作半天，最后还是点了个难吃的外卖。自己还总是跟组员讲，开发的时候要把用户当傻子，结果自己用各种软件的时候就开始犯小聪明，觉得这玩意，它哪里都不太行，不如我再试试别的？
 
-            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
-   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
-
-  0. You just DO WHAT THE FUCK YOU WANT TO.
-
-```
+回头看，每天都是乐此不疲的把时间精力金钱浪费在这些事情上，最后只剩下一地鸡毛。如果你也和当时的我一样，我认为是时候做些改变了。

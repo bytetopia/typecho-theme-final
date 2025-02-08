@@ -4,20 +4,6 @@ Demo|测试站点: https://final.linkpark.site/
 
 (Do not attack my vps please. 请不要攻击我的小鸡，谢谢大佬…)
 
-```
-/**
- * 或许是你的最终选择，接下来请专心写作吧。Your final choice. Please focus on writing next.
- * 
- *
- * @package final
- * @author HoytZhang
- * @version 1.0
- * @link https://github.com/hoytzhang/
- */
-```
-
-![screenshot](./screenshot.png)
-
 ---
 
 # 停止把时间浪费在寻找工具上

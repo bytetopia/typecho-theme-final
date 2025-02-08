@@ -5,7 +5,7 @@
  *
  * @package final
  * @author HoytZhang
- * @version 1.0
+ * @version 1.x
  * @link https://banzhuanriji.com
  */
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;

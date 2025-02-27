@@ -1,12 +1,20 @@
 # typecho-theme-final
 
-Demo|测试站点: https://final.linkpark.site/
+## preview
+
+https://final.linkpark.site/
 
 (Do not attack my vps please. 请不要攻击我的小鸡，谢谢大佬…)
 
+## hexo version
+
+我刚刚制作了这个主题的hexo同款，如果你有兴趣可以点这里查看
+
+[hexo-theme-final](https://github.com/hoytzhang/hexo-theme-final)
+
 ---
 
-# 停止把时间浪费在寻找工具上
+## 停止把时间浪费在寻找工具上
 
 > 今天想想，当时的我就是个赛博仓鼠，更准确地说是赛博恶龙，每天就是在囤积各种软件和工具，还会抽出时间，比较和欣赏自己的各种“战利品”。😭
 

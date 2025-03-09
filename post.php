@@ -21,5 +21,8 @@
     <p class="tags">
         <?php $this->tags(' · ', true, ' '); ?>
     </p>
+    <br/>
+    <?php $this->need('comments.php'); ?>
+    <br/>
 </main>
 <?php $this->need('footer.php'); ?>

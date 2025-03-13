@@ -10,6 +10,9 @@
             · 
         </i>
         <?php $this->category(' · '); ?>
+        <i>
+        · <?php echo ViewsCounter_Plugin::getViews(); ?> 次阅读
+        </i>
     </p>
     <article>
     <?php if ($this->content): ?>

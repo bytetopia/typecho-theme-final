@@ -1,15 +1,9 @@
 # typecho-theme-final
 
-经常换主题是不好的事情。但是如果你需要，可以试试我这款。
+本仓库 fork 自 https://github.com/hoytzhang/typecho-theme-final
 
-## preview
+主要修改：
+- 调整字体、字重
+- 增加评论
+- 增加适配于 postgres db 后端的阅读量统计插件
 
-https://final.linkpark.site/
-
-(Do not attack my vps please. 请不要攻击我的小鸡，谢谢大佬…)
-
-## hexo version
-
-我刚刚制作了这个主题的hexo同款，如果你有兴趣可以点这里查看
-
-[hexo-theme-final](https://github.com/hoytzhang/hexo-theme-final)

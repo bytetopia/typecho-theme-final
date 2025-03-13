@@ -15,7 +15,7 @@
 </span>
 
 <span>
-&copy; 2024 <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a>
+&copy; <?php echo date('Y');?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a>
 </span>
 
 </footer>

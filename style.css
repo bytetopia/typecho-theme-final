@@ -160,7 +160,7 @@ footer,footer a {
 	color:#999;
 	text-decoration:none;
 	transition:color 0.3s;
-	font-size:12px;
+	font-size:0.9rem;
 }
 .home {
 	display:flex;
